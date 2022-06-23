@@ -1,0 +1,5 @@
+- Criar componente/variantes dos botões
+- Footer
+- Responsividade
+- Criar placeholder sem vídeo ou carregar 1.ª aula automaticamente
+- Estilizar tela de loading
