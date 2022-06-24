@@ -30,8 +30,8 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 ## Desafios
 
 - [ ] Criar componente e variantes para botões
-- [ ] Criar _footer_
+- [x] Criar _footer_
 - [ ] Implemenetar responsividade
 - [ ] Criar _placeholder_ para vídeo ou carregar automaticamente a 1.º aula
 - [ ] Estilizar tela de _loading_
-- [ ] Adicionar ícone do React na tela de formulário
+- [x] Adicionar ícone do React na tela de formulário

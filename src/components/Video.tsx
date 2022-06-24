@@ -3,6 +3,7 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { gql, useQuery } from "@apollo/client";
 
 import '@vime/core/themes/default.css';
+import { Footer } from "./Footer";
 
 const GET_LESSON_BY_SLUG_QUERY = gql`
     query GetLessonBySlug ($slug: String) {
@@ -131,6 +132,8 @@ export function Video(props: VideoProps) {
                     </a>
                 </div>
             </div>
+
+            <Footer />
         </div>
     )
 }
