@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { LogoIgniteLab } from "../components/LogoIgniteLab";
 
+import codeMockup from '../assets/code-mockup.png';
+
 const CREATE_SUBSCRIBER_MUTATION = gql`
     mutation CreateSubscriber($name: String!, $email: String!) {
         createSubscriber(data: {name: $name, email: $email}) {
@@ -77,7 +79,7 @@ export function Subscribe() {
                     </div>
                 </div>
 
-                <img src="/src/assets/code-mockup.png" className="mt-10" alt="Code-Mockup" />
+                <img src={codeMockup} className="mt-10" alt="Code-Mockup" />
             </div>
             <Footer />
         </div>
