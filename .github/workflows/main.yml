@@ -1,0 +1,23 @@
+name: Build e Deploy
+on: 
+  push:
+    branches: ["master"]
+jobs:
+  Build-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check-out pro repositório
+        uses: actions/checkout@v3
+      - name: Configura usuário/e-mail
+        run: |
+          git config user.name "Matheus Guissi"
+          git config user.email "guissimatheus@gmail.com"
+      - name: Configura a versão do Node
+        uses: actions/setup-node@v3
+      - name: Instala dependências
+        run: npm install
+      - name: Build
+        run: npm run build
+      - run: |
+          ls
+          cd dist
