@@ -2,12 +2,10 @@ import { LogoRocketseat } from "./LogoRocketseat";
 
 export function Footer() {
     return (
-        <div className="py-5 px-6 bg-gray-900 border-t border-gray-600 flex items-center gap-6">
+        <div className="py-5 px-6 bg-gray-900 border-t border-gray-600 flex flex-col sm:flex-row items-center text-gray-300 w-full gap-6">
             <LogoRocketseat />
-            <div className="text-gray-300  w-full flex items-center justify-between">
-                <span>Rocketseat - Todos os direitos reservados</span>
-                <span>Políticas de privacidade</span>
-            </div>
+            <span>Rocketseat - Todos os direitos reservados</span>
+            <span className="sm:ml-auto">Políticas de privacidade</span>
         </div>
     )
 }

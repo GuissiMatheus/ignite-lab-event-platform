@@ -31,14 +31,16 @@ export function Subscribe() {
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat pt-2">
             <div className="flex flex-col items-center bg-reactIcon bg-top bg-no-repeat">
-                <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-                    <div className="max-w-[640px]">
-                        <LogoIgniteLab />
+                <div className="w-full max-w-[1100px] flex flex-col sm:flex-row sm:items-center justify-between mt-4 sm:mt-20 mx-auto">
+                    <div className="max-w-[640px] p-8 sm:p-0 text-center flex flex-col sm:block">
+                        <div className="place-self-center">
+                            <LogoIgniteLab />
+                        </div>
 
-                        <h1 className="mt-8 text-[2.5rem] leading-tight">
+                        <h1 className="mt-8 text-[2.5rem] leading-tight sm:text-justify">
                             Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
                         </h1>
-                        <p className="mt-4 text-gray-200 leading-relaxed">
+                        <p className="mt-4 text-gray-200 leading-relaxed text-justify" id="ultimaLinha">
                             Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
                         </p>
                     </div>
@@ -71,7 +73,7 @@ export function Subscribe() {
                     </div>
                 </div>
 
-                <img src={codeMockup} className="mt-10" alt="Code-Mockup" />
+                <img src={codeMockup} className="sm:mt-10 px-2 sm:px-0" alt="Code-Mockup" />
             </div>
             <Footer />
         </div>

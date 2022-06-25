@@ -6,3 +6,9 @@ body {
     @apply bg-gray-900 text-gray-100;
     -webkit-font-smoothing: antialiased;
 }
+
+@media (max-width: 640px) {
+    #ultimaLinha {
+        text-align-last: center
+    }
+}
