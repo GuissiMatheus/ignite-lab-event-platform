@@ -6,7 +6,7 @@ import { Router } from "./Router"
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter>
+      <BrowserRouter basename="/ignite-lab-event-platform">
         <Router />
       </BrowserRouter>
     </ApolloProvider>
