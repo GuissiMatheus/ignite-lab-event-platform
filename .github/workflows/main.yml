@@ -15,7 +15,7 @@ jobs:
       - name: Configura a versão do Node
         uses: actions/setup-node@v3
       - name: Instala dependências
-        run: npm install
+        run: npm install --force
       - name: Build
         run: npm run build
       - run: |
