@@ -33,7 +33,8 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 - [x] Criar componente e variantes para botões
 - [x] Criar componente e variantes para _cards_
 - [x] Criar _footer_
-- [ ] Implemenetar responsividade
+- [ ] Implementar responsividade
+- [x] Fixar **Header**
 - [ ] Criar _placeholder_ para vídeo ou carregar automaticamente a 1.º aula
 - [ ] Estilizar _loading_ do vídeo
 - [x] Adicionar ícone do React na tela **Subscribe**
