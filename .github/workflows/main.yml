@@ -2,6 +2,11 @@ name: Build e Deploy
 on: 
   push:
     branches: ["master"]
+# Pode ser definido dentro do job também
+env:
+  VITE_API_URL: ${{ secrets.VITE_API_URL }}
+  VITE_API_ACCESS_TOKEN: ${{ secrets.VITE_API_ACCESS_TOKEN }}
+
 jobs:
   Build-Deploy:
     runs-on: ubuntu-latest

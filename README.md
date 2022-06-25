@@ -1,7 +1,7 @@
 # Plataforma de Eventos
 
 Criação de uma Plataforma de Eventos.  
-Participação no Ignite Lab | ReactJS - Rocketseat (20 a 24/06/2022).  
+Participação no Ignite Lab | React - Rocketseat (20 a 24/06/2022).  
 
 ## Materiais
 
