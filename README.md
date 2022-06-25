@@ -26,6 +26,7 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 1. `npm create vite@latest`
 2. `npm run dev`
 3. `npx tailwindcss init -p`
+4. `npm run codegen`
 
 ## Desafios
 
@@ -34,5 +35,5 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 - [x] Criar _footer_
 - [ ] Implemenetar responsividade
 - [ ] Criar _placeholder_ para vídeo ou carregar automaticamente a 1.º aula
-- [ ] Estilizar tela de _loading_
-- [x] Adicionar ícone do React na tela de formulário
+- [ ] Estilizar _loading_ do vídeo
+- [x] Adicionar ícone do React na tela Subscribe
