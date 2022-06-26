@@ -31,17 +31,17 @@ export function Cards(props: CardsProps) {
     }
 
     return (
-        <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+        <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-4 sm:gap-6 hover:bg-gray-600 transition-colors">
             <div className="bg-green-700 h-full p-6 flex items-center">
                 {card.icon}
             </div>
-            <div className="py-6 leading-relaxed">
-                <strong className="text-2xl">{card.title}</strong>
-                <p className="text-sm text-gray-200 mt-2">
+            <div className="py-6 leading-relaxed sm:text-justify">
+                <strong className="text-lg sm:text-2xl ">{card.title}</strong>
+                <p className="text-xs sm:text-sm text-gray-200 mt-2">
                     {card.content}
                 </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex items-center text-blue-500">
                 <CaretRight size={24} />
             </div>
         </a>

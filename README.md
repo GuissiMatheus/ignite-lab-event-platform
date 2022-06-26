@@ -31,13 +31,14 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 ## Desafios
 
 - [x] Criar componente e variantes para botões
-- [x] Criar componente e variantes para _cards_
-- [x] Criar _footer_
+- [x] Criar componente e variantes para _cards_ de materiais
+- [x] Criar **Footer**
 - [ ] Implementar responsividade
 - [x] Fixar **Header**
 - [ ] Criar _placeholder_ para vídeo ou carregar automaticamente a 1.º aula
 - [ ] Estilizar _loading_ do vídeo
 - [x] Adicionar ícone do React na tela **Subscribe**
+- [ ] Criar __modal__ com mensagem de confirmação da inscrição
 
 ### Desafio Bônus
 
