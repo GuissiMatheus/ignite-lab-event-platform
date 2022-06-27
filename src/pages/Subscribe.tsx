@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { LogoIgniteLab } from "../components/LogoIgniteLab";
 import { useCreateSubscriberMutation } from "../graphql/generated";
@@ -70,7 +70,7 @@ export function Subscribe() {
                                 Garantir minha vaga
                             </button>
 
-                            <a onClick={() => navigate('/event')} className="text-center mt-1 text-gray-400">Já é inscrito? Acesse aqui</a>
+                            <Link to={'/event'} className="text-center mt-1 text-gray-400">Já é inscrito? Acesse aqui</Link>
                         </form>
                     </div>
                 </div>
