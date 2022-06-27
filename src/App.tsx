@@ -6,7 +6,7 @@ import { Router } from "./Router"
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter basename="/event-platform-react">
+      <BrowserRouter basename="/event-platform-react/">
         <Router />
       </BrowserRouter>
     </ApolloProvider>
