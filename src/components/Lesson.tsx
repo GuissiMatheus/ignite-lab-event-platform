@@ -27,7 +27,7 @@ export function Lesson(props: LessonProps) {
                 {availableDateFormatted}
             </span>
 
-            <div className={classNames('rounded border border-gray-500 p-4 mt-2', {
+            <div className={classNames('relative rounded border border-gray-500 p-4 mt-2', {
                 'group-hover:border-green-500': isLessonAvailable,
                 'bg-green-500': isActiveLeesson
             })}>
@@ -61,6 +61,9 @@ export function Lesson(props: LessonProps) {
                 })}>
                     {props.title}
                 </strong>
+                {isActiveLeesson && (
+                    <div className='rounded-sm bg-green-500 w-3 h-3 rotate-45 absolute top-0 bottom-0 left-[-6px] my-auto' />
+                )}
             </div>
         </Link>
     )
