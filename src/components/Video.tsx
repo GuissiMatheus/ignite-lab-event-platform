@@ -12,7 +12,8 @@ export function Video(props: VideoProps) {
     const { data } = useGetLessonBySlugQuery({
         variables: {
             slug: props.lessonSlug
-        }
+        },
+        fetchPolicy: "no-cache"
     })
 
     {/* Gambiarra da aula para não dar erro em lesson undefined */}

@@ -22,13 +22,14 @@ export function Lesson(props: LessonProps) {
     const isActiveLeesson = (slug == props.slug);
 
     return (
-        <Link to={`/event/lesson/${props.slug}`} className='group'>
+        <Link to={isLessonAvailable ? `/event/lesson/${props.slug}` : ''} className={classNames('group', {'cursor-default': !isLessonAvailable})}>
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>
 
-            <div className={classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
-                'bg-green-500': isActiveLeesson,
+            <div className={classNames('rounded border border-gray-500 p-4 mt-2', {
+                'group-hover:border-green-500': isLessonAvailable,
+                'bg-green-500': isActiveLeesson
             })}>
                 <header className="flex items-center justify-between">
                     {isLessonAvailable ? (
@@ -45,9 +46,10 @@ export function Lesson(props: LessonProps) {
                             Em breve
                         </span>
                     )}
-                    <span className={classNames('text-xs rounded px-2 py-[0.125rem] text-white border  font-bold', {
+                    <span className={classNames('text-xs rounded px-2 py-[0.125rem] text-white border font-bold', {
                         'border-white': isActiveLeesson,
                         'border-green-300': !isActiveLeesson,
+                        'border-orange-500': !isLessonAvailable
                     })}>
                         {props.type == 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
                     </span>
