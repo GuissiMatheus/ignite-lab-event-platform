@@ -3,8 +3,9 @@ import { format, isPast } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { Link, useParams } from 'react-router-dom';
 import classNames from 'classnames';
+import { StatusMenu } from "../interfaces/StatusMenu";
 
-interface LessonProps {
+interface LessonProps extends StatusMenu {
     title: string;
     slug: string;
     availableAt: Date;
@@ -18,17 +19,20 @@ export function Lesson(props: LessonProps) {
     const availableDateFormatted = format(props.availableAt, "EEEE' • 'd' de 'MMMM' • 'k'h'mm", {
         locale: ptBR,
     });
-
     const isActiveLeesson = (slug == props.slug);
 
     return (
-        <Link to={isLessonAvailable ? `/event/lesson/${props.slug}` : ''} className={classNames('group', {'cursor-default': !isLessonAvailable})}>
+        <Link 
+            to={isLessonAvailable ? `/event/lesson/${props.slug}` : ''}
+            className={classNames('group', {'cursor-default': !isLessonAvailable})}
+            onClick={() => isLessonAvailable && props.setStatusMenu(false)}
+        >
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>
 
             <div className={classNames('relative rounded border border-gray-500 p-4 mt-2', {
-                'group-hover:border-green-500': isLessonAvailable,
+                'group-hover:border-green-500': isLessonAvailable && !isActiveLeesson,
                 'bg-green-500': isActiveLeesson
             })}>
                 <header className="flex items-center justify-between">

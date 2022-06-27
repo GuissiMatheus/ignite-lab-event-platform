@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./Lesson";
+import { StatusMenu } from "../interfaces/StatusMenu";
 
-export function Sidebar(props: { isMenuOpen: boolean}) {
+export function Sidebar(props: StatusMenu) {
     const { data } = useGetLessonsQuery();
 
     return (
@@ -23,6 +24,8 @@ export function Sidebar(props: { isMenuOpen: boolean}) {
                             slug={lesson.slug}
                             availableAt={new Date(lesson.availableAt)}
                             type={lesson.lessonType}
+                            isMenuOpen={props.isMenuOpen} 
+                            setStatusMenu={props.setStatusMenu}
                         />
                     )
                 })}
