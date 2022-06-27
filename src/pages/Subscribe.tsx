@@ -70,7 +70,7 @@ export function Subscribe() {
                                 Garantir minha vaga
                             </button>
 
-                            <a href="event/" className="text-center mt-1 text-gray-400">Já é inscrito? Acesse aqui</a>
+                            <a href="/event" className="text-center mt-1 text-gray-400">Já é inscrito? Acesse aqui</a>
                         </form>
                     </div>
                 </div>
