@@ -8,6 +8,7 @@ interface CardContent {
     icon: any,
     title: string,
     content: string,
+    url: string
 }
 
 export function Cards(props: CardsProps) {
@@ -18,20 +19,22 @@ export function Cards(props: CardsProps) {
             card = {
                 icon: <FileArrowDown size={40} />,
                 title: 'Material complementar',
-                content: 'Acesse o material complementar para acelerar o seu desenvolvimento'
+                content: 'Acesse o material complementar para acelerar o seu desenvolvimento',
+                url: 'https://blog.rocketseat.com.br/melhores-sites-para-baixar-imagens-gratuitas-e-outros-recursos/'
             }
             break;
         case 'wallpapers':
             card = {
                 icon: <Image size={40} />,
                 title: 'Wallpapers exclusivos',
-                content: 'Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina'
+                content: 'Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina',
+                url: 'https://www.rocketseat.com.br/ignite'
             }
             break;
     }
 
     return (
-        <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-4 sm:gap-6 hover:bg-gray-600 transition-colors">
+        <a href={card.url} className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-4 sm:gap-6 hover:bg-gray-600 transition-colors">
             <div className="bg-green-700 h-full p-6 flex items-center">
                 {card.icon}
             </div>

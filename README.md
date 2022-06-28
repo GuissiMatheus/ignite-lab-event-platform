@@ -35,9 +35,9 @@ Protótipo no [Figma](https://www.figma.com/file/zx6sjXsgKp0BLJreGPfQxA/Platafor
 - [x] Criar **Footer**
 - [x] Implementar responsividade
 - [x] Fixar **Header**
-- [ ] Criar _placeholder_ para vídeo
+- [x] Criar _placeholder_ para vídeo
 - [x] Impedir acesso à aula indisponível
-- [ ] Estilizar _loading_ do vídeo
+- [x] Estilizar _loading_ do vídeo
 - [x] Adicionar ícone do React na tela **Subscribe**
 - [ ] Criar __modal__ com mensagem de confirmação da inscrição
 

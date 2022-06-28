@@ -3,6 +3,7 @@ import '@vime/core/themes/default.css';
 import { Botoes } from "./Botoes";
 import { Cards } from "./Cards";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+import { Spinner, SpinnerGap } from "phosphor-react";
 
 interface VideoProps {
     lessonSlug: string;
@@ -19,8 +20,19 @@ export function Video(props: VideoProps) {
     {/* Gambiarra da aula para não dar erro em lesson undefined */}
     if (!data || !data?.lesson) {
         return (
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex-1 flex flex-col justify-center items-center gap-2 text-gray-400 bg-reactIcon bg-center bg-no-repeat bg-contain">
+                <Spinner size={64}>
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        dur="5s"
+                        from="0 0 0"
+                        to="360 0 0"
+                        repeatCount="indefinite"
+                    />
+                </Spinner>
+                <p className="text-lg">Carregando...</p>
             </div>
         )
     }    
