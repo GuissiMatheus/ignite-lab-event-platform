@@ -15,7 +15,7 @@ export function Footer() {
             </a>
             <span className="sm:ml-auto sm:-mr-3">Desenvolvido por <strong className="text-blue-500">Matheus Guissi</strong></span>
             <span className="flex gap-6 sm:gap-3">
-                <a href="https://github.com/guissimatheus/event-platform-react/" target="_blank">
+                <a href="https://github.com/guissimatheus/event-platform-react#readme" target="_blank">
                     <img src={gitHub} className="h-8" alt="GitHub" />
                 </a>
                 <a href="https://www.linkedin.com/in/guissimatheus/" target="_blank">
